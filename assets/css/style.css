@@ -81,6 +81,11 @@ header {
     margin-bottom: 20px;
 }
 
+.my-work .section_subtitle {
+    font-size: 16px;
+    color: #666666;
+}
+
 .container {
     position: relative;
     display: inline-block;
@@ -94,10 +99,11 @@ header {
     display: inline-block;
     margin: 20px;
     transition: transform 0.3s ease-in-out;
+    text-decoration: none;
 }
 
-.portfolio_item:hover .text-block {
-    transform: translate(0, 0);
+.portfolio_item:hover {
+    transform: scale(1.05);
 }
 
 .portfolio_img {
@@ -115,13 +121,9 @@ header {
     color: #ffffff;
     padding: 5px;
     text-align: center;
-    opacity: 5;
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
-
-/* .container:hover {
-    transform: translateY(-5px);
-} */
 
 .text-block h4 {
     font-size: 16px;
@@ -157,4 +159,118 @@ header {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+/* CSS for all phone views */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    .picture {
+        width: 150px;
+    }
+
+    .greeting {
+        font-size: 30px;
+    }
+
+    .navbar {
+        margin-right: 0;
+    }
+
+    .navbar ul {
+        font-size: 16px;
+    }
+
+    .about-me {
+        margin: 30px 0;
+    }
+
+    .my-work {
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+
+    .my-work .section_title {
+        font-size: 20px;
+    }
+
+    .container,
+    .portfolio_item {
+        margin: 10px;
+    }
+
+    .portfolio_img {
+        height: 200px;
+    }
+
+    .text-block {
+        max-width: 150px;
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    #contact-me {
+        padding: 30px 0;
+    }
+
+    .contact-info {
+        margin: 5px 0;
+    }
+}
+
+/* CSS for screens up to 375px */
+@media only screen and (max-width: 375px) {
+    header {
+    padding: 5px;
+    }
+
+    .picture {
+    width: 120px;
+    }
+
+    .greeting {
+    font-size: 24px;
+    }
+
+    .navbar ul {
+    font-size: 14px;
+    }
+
+    .about-me {
+    margin: 20px 0;
+    }
+
+    .my-work {
+    padding: 5px;
+    margin-bottom: 20px;
+    }
+
+    .my-work .section_title {
+    font-size: 18px;
+    }
+
+    .container,
+    .portfolio_item {
+    margin: 5px;
+    }
+
+    .portfolio_img {
+    height: 150px;
+    }
+
+    .text-block {
+    max-width: 120px;
+    font-size: 10px;
+    padding: 2px;
+    }
+
+    #contact-me {
+    padding: 20px 0;
+    }
+
+    .contact-info {
+    margin: 3px 0;
+    }
 }
